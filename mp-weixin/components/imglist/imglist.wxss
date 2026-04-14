@@ -1,0 +1,407 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+/* 通用样式 */
+.hpaddingctn {
+  padding: 20rpx 30rpx;
+}
+.searchctn {
+  border-radius: 50rpx;
+  padding: 15rpx 30rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+/* 公共列表项样式 */
+.list_item, .list_item2, .list_item3 {
+  margin: 20rpx 0;
+  padding: 25rpx;
+  border-radius: 16rpx;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+.list_item:active, .list_item2:active, .list_item3:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+.list_item::after, .list_item2::after, .list_item3::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.02);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.list_item:active::after, .list_item2:active::after, .list_item3:active::after {
+  opacity: 1;
+}
+/* 图片通用样式 */
+.blog_cover, .blog_cover2, .blog_cover3 {
+  border-radius: 12rpx;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.blog_cover:active, .blog_cover2:active, .blog_cover3:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+/* 类型1样式（小图列表） */
+.list_item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.list_item .item_img {
+  width: 120rpx;
+  height: 120rpx;
+  flex-shrink: 0;
+  margin-right: 20rpx;
+}
+.list_item .item_img image {
+  width: 100%;
+  height: 100%;
+}
+.list_item .item_txt {
+  flex: 1;
+  min-width: 0;
+}
+.list_item .titlectn {
+  font-size: 32rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 8rpx;
+}
+.list_item .tctn {
+  font-size: 26rpx;
+  color: #666;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* 类型2样式（中图列表） */
+.list_item2 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.list_item2 .item_img2 {
+  width: 220rpx;
+  height: 220rpx;
+  flex-shrink: 0;
+  border-radius: 12rpx;
+  overflow: hidden;
+  z-index: 999;
+}
+.list_item2 .item_img2 image {
+  width: 100%;
+  height: 220rpx;
+  object-fit: cover;
+}
+.list_item2 .item_txt2 {
+  flex: 1;
+  margin-left: 25rpx;
+  z-index: 999;
+}
+.list_item2 .titlectn2 {
+  font-size: 34rpx;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 12rpx;
+}
+.list_item2 .sctn2 {
+  font-size: 28rpx;
+  color: #666;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 8rpx;
+}
+.list_item2 .tctn2 {
+  font-size: 26rpx;
+  color: #e4393c;
+  margin-top: 10rpx;
+}
+/* 类型3样式（大图列表） */
+.list_item3 .blog_cover3 {
+  width: 100%;
+  border-radius: 16rpx;
+  margin: 20rpx 0;
+}
+.list_item3 .titlectn3 {
+  font-size: 36rpx;
+  font-weight: 500;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 15rpx;
+}
+.list_item3 .sctn3 {
+  font-size: 28rpx;
+  color: #666;
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.list_item3 .tctn3 {
+  font-size: 30rpx;
+  color: #e4393c;
+  margin: 15rpx 0;
+  font-weight: bold;
+}
+/* 瀑布流布局 */
+.waterfall {
+  -webkit-column-count: 2;
+          column-count: 2;
+  -webkit-column-gap: 20rpx;
+          column-gap: 20rpx;
+  padding: 0 15rpx;
+}
+.waterfall .waterfallitem {
+  -webkit-column-break-inside: avoid;
+          break-inside: avoid;
+  margin-bottom: 20rpx;
+  background: #fff;
+  border-radius: 16rpx;
+  overflow: hidden;
+  box-shadow: 0 4rpx 20rpx rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  max-height: 400rpx;
+}
+.waterfall .waterfallitem:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+.waterfall .waterfallitem .wimg {
+  width: 100%;
+  border-radius: 16rpx 16rpx 0 0;
+}
+.waterfall .waterfallitem .wnote {
+  display: block;
+  padding: 20rpx;
+  font-size: 28rpx;
+  line-height: 1.4;
+}
+.waterfall .waterfallitem .wuserctn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 20rpx 20rpx;
+}
+.waterfall .waterfallitem .wuserctn .wname {
+  font-size: 24rpx;
+  color: #666;
+}
+.waterfall .waterfallitem .wuserctn .wprice {
+  font-size: 28rpx;
+  color: #e4393c;
+  font-weight: bold;
+}
+/* 时间轴样式 */
+.timeline-item {
+  position: relative;
+  padding-left: 40rpx;
+  margin-left: 30rpx;
+}
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10rpx;
+  width: 16rpx;
+  height: 16rpx;
+  background: #007aff;
+  border-radius: 50%;
+}
+.timeline-item::after {
+  content: '';
+  position: absolute;
+  left: 7rpx;
+  top: 26rpx;
+  bottom: -10rpx;
+  width: 2rpx;
+  background: #ddd;
+}
+/* 操作按钮容器 */
+.opctn2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 20rpx;
+  z-index: 999;
+}
+.opctn2 .opitem {
+  margin-left: 20rpx;
+}
+.opctn2 .opitem .u-button {
+  box-shadow: 0 4rpx 12rpx rgba(255, 153, 0, 0.2);
+  transition: all 0.2s ease;
+}
+.opctn2 .opitem .u-button:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+/* 头部状态栏 */
+.htitlestatus {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx 25rpx;
+  margin: 20rpx 0;
+  border-radius: 12rpx;
+}
+.htitlestatus .htitle {
+  font-size: 32rpx;
+  font-weight: bold;
+}
+.htitlestatus .hstatus {
+  font-size: 26rpx;
+  padding: 8rpx 20rpx;
+  border-radius: 30rpx;
+  background: rgba(255, 76, 76, 0.1);
+}
+/* 加载动画 */
+@-webkit-keyframes fadeInUp {
+from {
+    opacity: 0;
+    -webkit-transform: translateY(20rpx);
+            transform: translateY(20rpx);
+}
+to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+}
+}
+@keyframes fadeInUp {
+from {
+    opacity: 0;
+    -webkit-transform: translateY(20rpx);
+            transform: translateY(20rpx);
+}
+to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+}
+}
+.list_item, .list_item2, .list_item3 {
+  -webkit-animation: fadeInUp 0.5s ease both;
+          animation: fadeInUp 0.5s ease both;
+}
+/* 阴影效果 */
+.fshadow {
+  box-shadow: 0 8rpx 30rpx rgba(0, 0, 0, 0.08);
+}
+/* 单元格样式 */
+.u-cell-group {
+  margin: 20rpx 0;
+}
+.u-cell-group .u-cell {
+  transition: all 0.2s ease;
+}
+.u-cell-group .u-cell:active {
+  background-color: #f8f8f8;
+}
+/* 博客列表样式 */
+.blog_item {
+  margin: 25rpx;
+  padding: 25rpx;
+  background: #fff;
+  border-radius: 16rpx;
+}
+.blog_item .blog_top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+.blog_item .blog_top .blogavatar {
+  width: 80rpx;
+  height: 80rpx;
+}
+.blog_item .blog_top .blog_avatar {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20rpx;
+}
+.blog_item .blog_top .blog_user {
+  flex: 1;
+}
+.blog_item .blog_top .blog_user .busername {
+  display: block;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.blog_item .blog_top .blog_user .busernote {
+  font-size: 24rpx;
+  color: #666;
+}
+.blog_item .blog_note {
+  font-size: 28rpx;
+  line-height: 1.6;
+  margin-bottom: 20rpx;
+}
+.blog_item .blog_op {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-size: 24rpx;
+  color: #666;
+}
+/* 响应式处理 */
+@media (max-width: 480px) {
+.list_item2 .item_img2 {
+    width: 180rpx;
+    height: 130rpx;
+}
+}
+

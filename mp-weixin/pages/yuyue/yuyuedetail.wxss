@@ -1,0 +1,258 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.page-container.data-v-0c029ab3 {
+  min-height: 100vh;
+  background-color: #f6f8fb;
+}
+.content-scroll.data-v-0c029ab3 {
+  height: calc(100vh - 44px);
+}
+/* Header States */
+.status-header.data-v-0c029ab3 {
+  padding: 60rpx 40rpx;
+  color: #ffffff;
+  transition: all 0.3s;
+}
+.state-normal.data-v-0c029ab3 {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+.state-danger.data-v-0c029ab3 {
+  background: linear-gradient(135deg, #f5576c 0%, #f093fb 100%);
+}
+.state-finished.data-v-0c029ab3 {
+  background: linear-gradient(135deg, #6a85b6 0%, #bac8e0 100%);
+}
+.state-grey.data-v-0c029ab3 {
+  background: linear-gradient(135deg, #94a3b8 0%, #cbd5e1 100%);
+}
+.status-content.data-v-0c029ab3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.status-main.data-v-0c029ab3 {
+  font-size: 44rpx;
+  font-weight: 800;
+  display: block;
+  margin-bottom: 8rpx;
+}
+.status-sub.data-v-0c029ab3 {
+  font-size: 24rpx;
+  opacity: 0.85;
+}
+.status-icon.data-v-0c029ab3 {
+  font-size: 80rpx;
+}
+/* Main Cards */
+.info-card.data-v-0c029ab3 {
+  margin: -30rpx 24rpx 24rpx;
+  background-color: #ffffff;
+  border-radius: 24rpx;
+  padding: 40rpx;
+  box-shadow: 0 10rpx 30rpx rgba(0, 0, 0, 0.04);
+  position: relative;
+}
+.ticket-card.data-v-0c029ab3 {
+  padding: 0;
+  overflow: hidden;
+}
+.card-section.data-v-0c029ab3 {
+  padding: 40rpx;
+}
+.room-title.data-v-0c029ab3 {
+  font-size: 38rpx;
+  font-weight: 800;
+  color: #1e293b;
+  margin-bottom: 20rpx;
+}
+.seat-badge.data-v-0c029ab3 {
+  display: inline-block;
+  background-color: #f0f7ff;
+  color: #3b82f6;
+  padding: 12rpx 32rpx;
+  border-radius: 100rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+}
+/* Perforated Divider Styling */
+.perforated-divider.data-v-0c029ab3 {
+  height: 2rpx;
+  border-bottom: 2rpx dashed #e2e8f0;
+  margin: 0 40rpx;
+  position: relative;
+}
+.cutout-left.data-v-0c029ab3, .cutout-right.data-v-0c029ab3 {
+  width: 32rpx;
+  height: 32rpx;
+  background-color: #f6f8fb;
+  border-radius: 50%;
+  position: absolute;
+  top: -16rpx;
+}
+.cutout-left.data-v-0c029ab3 {
+  left: -56rpx;
+}
+.cutout-right.data-v-0c029ab3 {
+  right: -56rpx;
+}
+/* Detail Rows */
+.info-row.data-v-0c029ab3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28rpx;
+}
+.info-row.data-v-0c029ab3:last-child {
+  margin-bottom: 0;
+}
+.label.data-v-0c029ab3 {
+  color: #64748b;
+  font-size: 28rpx;
+}
+.value.data-v-0c029ab3 {
+  color: #1e293b;
+  font-size: 28rpx;
+  font-weight: 600;
+}
+.price-text.data-v-0c029ab3 {
+  color: #ef4444;
+  font-size: 34rpx;
+  font-weight: 800;
+}
+/* Action Buttons */
+.action-section.data-v-0c029ab3 {
+  padding: 10rpx 24rpx 30rpx;
+}
+.btn-group.data-v-0c029ab3 {
+  display: flex;
+  flex-direction: column;
+  gap: 24rpx;
+}
+.btn-group-row.data-v-0c029ab3 {
+  display: flex;
+  gap: 20rpx;
+}
+.flex-item.data-v-0c029ab3 {
+  flex: 1;
+}
+/* Sections titles */
+.section-title.data-v-0c029ab3 {
+  font-size: 30rpx;
+  font-weight: 800;
+  color: #1e293b;
+  margin-bottom: 30rpx;
+  border-left: 10rpx solid #3b82f6;
+  padding-left: 20rpx;
+}
+.rate-container.data-v-0c029ab3 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30rpx;
+}
+.textarea-container.data-v-0c029ab3 {
+  background-color: #f8fafc;
+  border-radius: 16rpx;
+  padding: 10rpx 20rpx;
+}
+/* Service Item Style */
+.service-item.data-v-0c029ab3 {
+  display: flex;
+  align-items: center;
+  padding: 24rpx;
+  background-color: #f8fafc;
+  border-radius: 20rpx;
+  margin-bottom: 20rpx;
+  border: 1rpx solid #f1f5f9;
+}
+.service-img.data-v-0c029ab3 {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 12rpx;
+  margin-right: 24rpx;
+}
+.service-name.data-v-0c029ab3 {
+  font-size: 28rpx;
+  color: #1e293b;
+  font-weight: 700;
+  margin-bottom: 4rpx;
+}
+.service-tag.data-v-0c029ab3 {
+  font-size: 22rpx;
+  color: #94a3b8;
+}
+/* Evaluation Display */
+.comment-display.data-v-0c029ab3 {
+  background-color: #f0f9ff;
+  padding: 24rpx;
+  border-radius: 16rpx;
+}
+.comment-text.data-v-0c029ab3 {
+  font-size: 28rpx;
+  color: #0369a1;
+  line-height: 1.5;
+}
+/* Pay Sheet */
+.pay-sheet.data-v-0c029ab3 {
+  padding: 50rpx 40rpx;
+  text-align: center;
+}
+.pay-title.data-v-0c029ab3 {
+  font-size: 34rpx;
+  font-weight: 800;
+  margin-bottom: 40rpx;
+  color: #1e293b;
+}
+.pay-price-box.data-v-0c029ab3 {
+  margin-bottom: 50rpx;
+}
+.currency.data-v-0c029ab3 {
+  font-size: 36rpx;
+  font-weight: 800;
+  color: #1e293b;
+  margin-right: 4rpx;
+}
+.amount.data-v-0c029ab3 {
+  font-size: 72rpx;
+  font-weight: 800;
+  color: #1e293b;
+}
+.pay-confirm-btn.data-v-0c029ab3 {
+  margin-top: 60rpx;
+}
+.safe-bottom-holder.data-v-0c029ab3 {
+  height: 80rpx;
+}
+/* Responsive Web Layout */
+@media screen and (min-width: 768px) {
+.page-container.data-v-0c029ab3 {
+    max-width: 480px;
+    margin: 0 auto;
+    border-left: 1rpx solid #e2e8f0;
+    border-right: 1rpx solid #e2e8f0;
+}
+}
+

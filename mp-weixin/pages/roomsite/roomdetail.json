@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "u-navbar": "/node-modules/uview-ui/components/u-navbar/u-navbar",
+    "u-parse": "/node-modules/uview-ui/components/u-parse/u-parse",
+    "tn-rate": "/tuniao-ui/components/tn-rate/tn-rate",
+    "tn-input": "/tuniao-ui/components/tn-input/tn-input",
+    "tn-button": "/tuniao-ui/components/tn-button/tn-button",
+    "tn-tips": "/tuniao-ui/components/tn-tips/tn-tips"
+  }
+}

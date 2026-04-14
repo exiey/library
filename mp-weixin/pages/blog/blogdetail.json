@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "u-navbar": "/node-modules/uview-ui/components/u-navbar/u-navbar",
+    "showfile": "/components/showfile/showfile",
+    "u-parse": "/node-modules/uview-ui/components/u-parse/u-parse",
+    "imglist": "/components/imglist/imglist",
+    "u--textarea": "/node-modules/uview-ui/components/u--textarea/u--textarea",
+    "u-button": "/node-modules/uview-ui/components/u-button/u-button"
+  }
+}

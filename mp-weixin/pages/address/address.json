@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "u-navbar": "/node-modules/uview-ui/components/u-navbar/u-navbar",
+    "u--input": "/node-modules/uview-ui/components/u--input/u--input",
+    "u--textarea": "/node-modules/uview-ui/components/u--textarea/u--textarea",
+    "u-button": "/node-modules/uview-ui/components/u-button/u-button"
+  }
+}

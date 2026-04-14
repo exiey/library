@@ -1,0 +1,102 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/login/rootip",
+    "pages/index/index",
+    "pages/me/me",
+    "pages/login/register",
+    "pages/me/medetail",
+    "pages/notice/notice",
+    "pages/notice/notice2",
+    "pages/notice/notice3",
+    "pages/notice/noticedetail",
+    "pages/favs/favs",
+    "pages/shops/shops",
+    "pages/shops/shopdetail",
+    "pages/posts/posts",
+    "pages/posts/postsdetail",
+    "pages/posts/postsmg",
+    "pages/posts/postslist",
+    "pages/yuyue/yuyue",
+    "pages/yuyue/sureyuyue",
+    "pages/yuyue/yuyuedetail",
+    "pages/roomsite/roomsite",
+    "pages/roomsite/roomtuijian",
+    "pages/roomsite/room",
+    "pages/roomsite/roomdetail",
+    "pages/paihangbang/paihangbang",
+    "pages/yuyue/saoma",
+    "pages/blog/blog",
+    "pages/blog/blogdetail",
+    "pages/blog/blogmg",
+    "pages/blog/bloglist",
+    "pages/qianbao/qianbao",
+    "pages/qianbao/charge",
+    "pages/youhuiquan/youhuiquan",
+    "pages/bill/bill",
+    "pages/bill/surebill",
+    "pages/bill/billdetail",
+    "pages/address/address",
+    "pages/address/addressmg",
+    "pages/good/gooddetail",
+    "pages/good/good",
+    "pages/good/goodview",
+    "pages/index/indexzhanzuo",
+    "pages/me/desktop",
+    "pages/me/userprofile"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8",
+    "titleNView": false,
+    "scrollIndicator": "none",
+    "navigationStyle": "custom",
+    "navigationBarRightButton": {
+      "hide": true
+    }
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#000",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/images/tabbar/shouye.png",
+        "selectedIconPath": "static/images/tabbar/shouye.png"
+      },
+      {
+        "pagePath": "pages/index/indexzhanzuo",
+        "text": "座位查询",
+        "iconPath": "static/images/tabbar/faxian.png",
+        "selectedIconPath": "static/images/tabbar/faxian.png"
+      },
+      {
+        "pagePath": "pages/yuyue/yuyue",
+        "text": "我的预约",
+        "iconPath": "static/images/tabbar/shouce.png",
+        "selectedIconPath": "static/images/tabbar/shouce.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "static/images/tabbar/wode.png",
+        "selectedIconPath": "static/images/tabbar/wode.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "申请获取您的位置"
+    }
+  },
+  "requiredPrivateInfos": [
+    "getLocation",
+    "chooseLocation"
+  ],
+  "usingComponents": {}
+}

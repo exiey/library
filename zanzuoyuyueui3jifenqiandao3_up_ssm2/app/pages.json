@@ -1,0 +1,175 @@
+{
+	"easycom": {
+		"autoscan": true,
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue",
+		"^tn-(.*)": "@/tuniao-ui/components/tn-$1/tn-$1.vue"
+	},
+	"pages": [
+		{
+			"path": "pages/login/login"
+			
+		},
+		{
+			"path": "pages/login/rootip"
+
+		},
+		{
+			"path": "pages/index/index"
+			
+		},{
+			"path": "pages/me/me"
+			
+
+		}, {
+			"path": "pages/login/register"
+			
+		},
+		{
+			"path": "pages/me/medetail"
+			
+		},  {
+			"path": "pages/notice/notice"
+			
+		},  {
+			"path": "pages/notice/notice2"
+
+		},  {
+			"path": "pages/notice/notice3"
+
+		}, {
+			"path": "pages/notice/noticedetail"
+			
+		},{
+			"path": "pages/favs/favs"
+			
+
+		}, {
+			"path": "pages/shops/shops"
+			
+
+		}, {
+			"path": "pages/shops/shopdetail"
+			
+
+		}
+		,{
+		    "path" : "pages/posts/posts"
+		},{
+		    "path" : "pages/posts/postsdetail"
+		},{
+		    "path" : "pages/posts/postsmg"
+		},{
+		    "path" : "pages/posts/postslist"
+		}
+        ,{
+			"path" : "pages/yuyue/yuyue"
+
+		},{
+			"path" : "pages/yuyue/sureyuyue"
+
+		},{
+			"path" : "pages/yuyue/yuyuedetail"
+
+		},{
+			"path" : "pages/roomsite/roomsite"
+
+		},{
+			"path" : "pages/roomsite/roomtuijian"
+
+		},{
+			"path" : "pages/roomsite/room"
+
+		},{
+			"path" : "pages/roomsite/roomdetail"
+
+		},{
+			"path" : "pages/paihangbang/paihangbang"
+
+		},{
+			"path" : "pages/yuyue/saoma"
+
+		},{
+			"path" : "pages/blog/blog"
+
+		},{
+			"path" : "pages/blog/blogdetail"
+
+		},{
+			"path" : "pages/blog/blogmg"
+
+		},{
+			"path" : "pages/blog/bloglist"
+
+		},{
+			"path" : "pages/qianbao/qianbao"
+
+		},{
+			"path" : "pages/qianbao/charge"
+
+		},{
+			"path" : "pages/youhuiquan/youhuiquan"
+
+		},{
+			"path" : "pages/bill/bill"
+		},{
+			"path" : "pages/bill/surebill"
+		},{
+			"path" : "pages/bill/billdetail"
+		},{
+			"path" : "pages/address/address"
+		},{
+			"path" : "pages/address/addressmg"
+		},{
+			"path" : "pages/good/gooddetail"
+		},{
+			"path" : "pages/good/good"
+		},{
+			"path" : "pages/good/goodview"
+		},{
+			"path" : "pages/index/indexzhanzuo"
+		},{
+			"path" : "pages/me/desktop"
+		},{
+			"path" : "pages/me/userprofile"
+		}
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"titleNView": false,
+		"scrollIndicator": "none",
+		"navigationStyle": "custom",
+		"navigationBarRightButton": {
+			"hide": true
+		}
+	},
+	"uniIdRouter": {},
+	"tabBar": {
+		"color": "#999",
+		"selectedColor": "#000",
+		"backgroundColor": "#fff",
+		"list": [{
+			"pagePath": "pages/index/index",
+			"text": "首页",
+			"iconPath": "static/images/tabbar/shouye.png",
+			"selectedIconPath": "static/images/tabbar/shouye.png"
+		},{
+			"pagePath": "pages/index/indexzhanzuo",
+			"text": "座位查询",
+			"iconPath": "static/images/tabbar/faxian.png",
+			"selectedIconPath": "static/images/tabbar/faxian.png"
+		},{
+			"pagePath": "pages/yuyue/yuyue",
+			"text": "我的预约",
+			"iconPath": "static/images/tabbar/shouce.png",
+			"selectedIconPath": "static/images/tabbar/shouce.png"
+		}, {
+			"pagePath": "pages/me/me",
+			"text": "我的",
+			"iconPath": "static/images/tabbar/wode.png",
+			"selectedIconPath": "static/images/tabbar/wode.png"
+		}]
+	}
+}

@@ -1,0 +1,28 @@
+
+.choosefilebtn{
+	height: 100rpx;
+	width: 200rpx;
+	text-align: center;
+	background-color: #fff;
+	border: 1px #ddd solid;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.sficon{
+	width: 50rpx;
+}
+.sftext{
+	color: #666;
+}
+.timg{
+	width: 100%;
+}
+.tvideo{
+	width: 100%;
+}
+.filetext{
+	color: #333;
+}
+

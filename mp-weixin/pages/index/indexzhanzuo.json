@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "u-navbar": "/node-modules/uview-ui/components/u-navbar/u-navbar",
+    "ideadatetime": "/components/ideadatetime/ideadatetime",
+    "ideaselect": "/components/ideaselect/ideaselect",
+    "u-button": "/node-modules/uview-ui/components/u-button/u-button",
+    "u-empty": "/node-modules/uview-ui/components/u-empty/u-empty"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "u-navbar": "/node-modules/uview-ui/components/u-navbar/u-navbar",
+    "u--form": "/node-modules/uview-ui/components/u--form/u--form",
+    "ideaselect": "/components/ideaselect/ideaselect",
+    "ideaslc": "/components/ideaslc/ideaslc",
+    "ideadatetime": "/components/ideadatetime/ideadatetime",
+    "u-button": "/node-modules/uview-ui/components/u-button/u-button",
+    "img-list": "/components/img-list"
+  }
+}

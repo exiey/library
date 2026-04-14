@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Meta, title, CSS, favicons, etc. -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="images/favicon.ico" type="image/ico" />
+
+  <title>后台管理系统</title>
+
+  <!-- Bootstrap -->
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="./css/font-awesome.min.css" rel="stylesheet">
+  <!-- NProgress -->
+
+  <!-- iCheck -->
+
+  <!-- bootstrap-progressbar -->
+  <!-- JQVMap -->
+  <!-- bootstrap-daterangepicker -->
+
+  <!-- Custom Theme Style -->
+  <link href="./css/custom.css" rel="stylesheet">
+</head>
+
+<body class="nav-md">
+<div class="container body">
+  <div class="main_container">
+    <div class="col-md-3 left_col">
+      <div class="left_col scroll-view">
+        <div class="navbar nav_title" style="border: 0;">
+          <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>管理系统</span></a>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <!-- menu profile quick info -->
+        <div class="profile clearfix">
+          <div class="profile_pic">
+            <img src="./__PUBLIC__/images/tubiao.png" alt="..." class="img-circle profile_img">
+          </div>
+          <div class="profile_info">
+            <span>Welcome,</span>
+            <h2 id="userlabel">John Doe</h2>
+          </div>
+        </div>
+        <!-- /menu profile quick info -->
+
+        <br />
+
+        <!-- sidebar menu -->
+        <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+          <div class="menu_section">
+            <h3></h3>
+            <ul class="nav side-menu">
+              <li><a><i class="fa fa-home"></i> 系统管理 <span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu" id="mymenus">
+
+                </ul>
+              </li>
+              <li><a><i class="fa fa-edit"></i>个人中心 <span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu">
+                  <li onclick="setUrl(this,'profile.html')"><a href="#">个人信息</a></li>
+                  <li onclick="setUrl(this,'changepw.html')"><a href="#">修改密码</a></li>
+                  <li><a onclick="logOut()" href="#">退出登录</a></li>
+                </ul>
+              </li>
+
+            </ul>
+          </div>
+
+
+        </div>
+        <!-- /sidebar menu -->
+
+      </div>
+    </div>
+
+    <!-- top navigation -->
+    <div class="top_nav">
+      <div class="nav_menu">
+        <div class="nav toggle">
+          <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+        </div>
+        <nav class="nav navbar-nav">
+
+        </nav>
+      </div>
+    </div>
+    <!-- /top navigation -->
+
+    <!-- page content -->
+    <div class="right_col" role="main">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="x_panel">
+            <div class="x_content">
+              <iframe id="targetframe" style="width: 100%;height: 100vh;border: none;" src="http://localhost:8088/user.html"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="pull-right">
+        Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
+      </div>
+      <div class="clearfix"></div>
+    </footer>
+
+  </div>
+</div>
+
+<script src="./js/jquery.min.js"></script>
+
+<script src="./js/bootstrap.bundle.min.js"></script>
+
+<script src="./js/skycons.js"></script>
+
+<script src="./js/date.js"></script>
+
+<script src="./js/custom.js"></script>
+<script type="text/javascript" src="./__PUBLIC__/js/common.js"></script>
+<script>
+  function setUrl(el,url){
+    $(".active").removeClass("active");
+    $(el).addClass("active");
+    $("#targetframe").attr("src",url);
+  }
+  $("#userlabel").text(userinfo && userinfo.username);
+  function initMenus(){
+    let menujson = null;
+    if(userinfo.roletype=="3"){
+      menujson = "./__PUBLIC__/layuimini/api/init3.json";
+
+    }else if(userinfo.roletype=="1"){
+      menujson = "./__PUBLIC__/layuimini/api/init.json";
+    }else{
+      window.location.href="login.html";
+    }
+    $.getJSON(menujson,null,function (mdata){
+      console.log(mdata);
+      let homeInfo = mdata.homeInfo;
+      let hurl = homeInfo.href;
+      if(hurl){
+        $("#targetframe").attr("src",rootUrl+hurl)
+      }
+
+      let logoInfo = mdata.logoInfo;
+      let logoimg = logoInfo.image;
+      let htitle = logoInfo.title;
+
+      let menuInfo = mdata.menuInfo;
+      let mlist = menuInfo[0]['child'];
+
+      let mhtml = "";
+      for (let i = 0; i < mlist.length; i++) {
+        let m = mlist[i];
+        mhtml += `<li onclick="setUrl(this,'${rootUrl+m.href}')"><a href="#">${m.title}</a></li>`;
+      }
+
+      $("#mymenus").html(mhtml);
+    })
+  }
+
+  $(function(){
+
+    if(userinfo){
+      $("#userlabel").text(userinfo && userinfo.username);
+      $("#admintouxiang").css("background-image","url('"+fileurl+userinfo.img+"')");
+      initMenus();
+    }else{
+      logOut()
+    }
+
+  });
+  function logOut(){
+    window.location.href="login.html";
+  }
+</script>
+</body>
+</html>

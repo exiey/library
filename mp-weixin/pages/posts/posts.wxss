@@ -1,0 +1,135 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+/* 页面背景 */
+.page-container.data-v-58782f2e {
+  background-color: #f1f5f9;
+  min-height: 100vh;
+}
+/* 导航栏右侧按钮自定义 */
+.nav-right-btn.data-v-58782f2e {
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  color: #ffffff;
+  padding: 10rpx 24rpx;
+  border-radius: 30rpx;
+  font-size: 24rpx;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4rpx 12rpx rgba(37, 99, 235, 0.2);
+}
+.nav-right-btn.data-v-58782f2e:active {
+  opacity: 0.8;
+}
+.nav-right-btn .plus-icon.data-v-58782f2e {
+  font-size: 20rpx;
+  margin-right: 6rpx;
+}
+.svcontainer.data-v-58782f2e {
+  height: calc(100vh - 44px);
+}
+/* Hero 引导区域 */
+.hero-section.data-v-58782f2e {
+  padding: 40rpx 30rpx;
+  background-color: #ffffff;
+  border-bottom: 1rpx solid #e2e8f0;
+  margin-bottom: 20rpx;
+}
+.hero-section .welcome-box .title.data-v-58782f2e {
+  font-size: 40rpx;
+  font-weight: 800;
+  color: #1e293b;
+  display: block;
+}
+.hero-section .welcome-box .subtitle.data-v-58782f2e {
+  font-size: 24rpx;
+  color: #64748b;
+  margin-top: 10rpx;
+  display: block;
+}
+/* 列表容器美化 */
+.list-container.data-v-58782f2e {
+  padding: 0 20rpx;
+}
+/* 穿透修改内部组件样式，增加卡片质感 */
+.styled-list.data-v-58782f2e  .imglist-item {
+  background-color: #ffffff !important;
+  border-radius: 24rpx !important;
+  margin-bottom: 24rpx !important;
+  padding: 20rpx !important;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.03) !important;
+  border: none !important;
+  /* 针对标题字体的优化 */
+  /* 针对副标题/时间的优化 */
+}
+.styled-list.data-v-58782f2e  .imglist-item .title {
+  font-size: 30rpx !important;
+  font-weight: 600 !important;
+  color: #1e293b !important;
+}
+.styled-list.data-v-58782f2e  .imglist-item .desc {
+  color: #94a3b8 !important;
+  font-size: 24rpx !important;
+}
+/* 空状态 */
+.empty-box.data-v-58782f2e {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 200rpx;
+}
+.empty-box .empty-emoji.data-v-58782f2e {
+  font-size: 120rpx;
+  margin-bottom: 30rpx;
+}
+.empty-box .empty-text.data-v-58782f2e {
+  font-size: 28rpx;
+  color: #94a3b8;
+  margin-bottom: 40rpx;
+}
+.empty-box .empty-btn.data-v-58782f2e {
+  background-color: #3b82f6;
+  color: white;
+  padding: 16rpx 60rpx;
+  border-radius: 40rpx;
+  font-size: 28rpx;
+  box-shadow: 0 8rpx 16rpx rgba(59, 130, 246, 0.2);
+}
+.footer-spacer.data-v-58782f2e {
+  height: 40rpx;
+}
+/* 多端适配 - Web 模式限制宽度 */
+@media screen and (min-width: 768px) {
+.page-container.data-v-58782f2e {
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 0 40rpx rgba(0, 0, 0, 0.05);
+}
+.svcontainer.data-v-58782f2e {
+    /* 针对PC端可能没有滚动条的情况优化 */
+    overflow-y: auto;
+}
+}
+

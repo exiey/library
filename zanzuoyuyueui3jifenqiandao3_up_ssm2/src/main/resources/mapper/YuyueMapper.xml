@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ideabobo.service.YuyueMapper">
+  <resultMap id="BaseResultMap" type="com.ideabobo.model.Yuyue">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="sid" jdbcType="INTEGER" property="sid" />
+    <result column="username" jdbcType="VARCHAR" property="username" />
+    <result column="uid" jdbcType="VARCHAR" property="uid" />
+    <result column="shop" jdbcType="VARCHAR" property="shop" />
+    <result column="ndate" jdbcType="VARCHAR" property="ndate" />
+    <result column="total" jdbcType="VARCHAR" property="total" />
+    <result column="ydate" jdbcType="VARCHAR" property="ydate" />
+    <result column="typecn" jdbcType="VARCHAR" property="typecn" />
+    <result column="typeid" jdbcType="INTEGER" property="typeid" />
+    <result column="tel" jdbcType="VARCHAR" property="tel" />
+    <result column="note" jdbcType="VARCHAR" property="note" />
+    <result column="statecn" jdbcType="VARCHAR" property="statecn" />
+    <result column="pnote" jdbcType="VARCHAR" property="pnote" />
+    <result column="pf" jdbcType="VARCHAR" property="pf" />
+    <result column="lxr" jdbcType="VARCHAR" property="lxr" />
+    <result column="roomid" jdbcType="INTEGER" property="roomid" />
+    <result column="site" jdbcType="VARCHAR" property="site" />
+    <result column="siteid" jdbcType="INTEGER" property="siteid" />
+    <result column="shiduan" jdbcType="VARCHAR" property="shiduan" />
+    <result column="room" jdbcType="VARCHAR" property="room" />
+    <result column="shiduanid" jdbcType="INTEGER" property="shiduanid" />
+    <result column="stime" jdbcType="VARCHAR" property="stime" />
+    <result column="etime" jdbcType="VARCHAR" property="etime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, sid, username, uid, shop, ndate, total, ydate, typecn, typeid, tel, note, statecn, 
+    pnote, pf, lxr, roomid, site, siteid, shiduan, room, shiduanid, stime, etime
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from wct_yuyue
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from wct_yuyue
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.ideabobo.model.Yuyue">
+    insert into wct_yuyue (id, sid, username, 
+      uid, shop, ndate, total, 
+      ydate, typecn, typeid, 
+      tel, note, statecn, 
+      pnote, pf, lxr, roomid, 
+      site, siteid, shiduan, 
+      room, shiduanid, stime, 
+      etime)
+    values (#{id,jdbcType=INTEGER}, #{sid,jdbcType=INTEGER}, #{username,jdbcType=VARCHAR}, 
+      #{uid,jdbcType=VARCHAR}, #{shop,jdbcType=VARCHAR}, #{ndate,jdbcType=VARCHAR}, #{total,jdbcType=VARCHAR}, 
+      #{ydate,jdbcType=VARCHAR}, #{typecn,jdbcType=VARCHAR}, #{typeid,jdbcType=INTEGER}, 
+      #{tel,jdbcType=VARCHAR}, #{note,jdbcType=VARCHAR}, #{statecn,jdbcType=VARCHAR}, 
+      #{pnote,jdbcType=VARCHAR}, #{pf,jdbcType=VARCHAR}, #{lxr,jdbcType=VARCHAR}, #{roomid,jdbcType=INTEGER}, 
+      #{site,jdbcType=VARCHAR}, #{siteid,jdbcType=INTEGER}, #{shiduan,jdbcType=VARCHAR}, 
+      #{room,jdbcType=VARCHAR}, #{shiduanid,jdbcType=INTEGER}, #{stime,jdbcType=VARCHAR}, 
+      #{etime,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.ideabobo.model.Yuyue">
+    insert into wct_yuyue
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="sid != null">
+        sid,
+      </if>
+      <if test="username != null">
+        username,
+      </if>
+      <if test="uid != null">
+        uid,
+      </if>
+      <if test="shop != null">
+        shop,
+      </if>
+      <if test="ndate != null">
+        ndate,
+      </if>
+      <if test="total != null">
+        total,
+      </if>
+      <if test="ydate != null">
+        ydate,
+      </if>
+      <if test="typecn != null">
+        typecn,
+      </if>
+      <if test="typeid != null">
+        typeid,
+      </if>
+      <if test="tel != null">
+        tel,
+      </if>
+      <if test="note != null">
+        note,
+      </if>
+      <if test="statecn != null">
+        statecn,
+      </if>
+      <if test="pnote != null">
+        pnote,
+      </if>
+      <if test="pf != null">
+        pf,
+      </if>
+      <if test="lxr != null">
+        lxr,
+      </if>
+      <if test="roomid != null">
+        roomid,
+      </if>
+      <if test="site != null">
+        site,
+      </if>
+      <if test="siteid != null">
+        siteid,
+      </if>
+      <if test="shiduan != null">
+        shiduan,
+      </if>
+      <if test="room != null">
+        room,
+      </if>
+      <if test="shiduanid != null">
+        shiduanid,
+      </if>
+      <if test="stime != null">
+        stime,
+      </if>
+      <if test="etime != null">
+        etime,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="sid != null">
+        #{sid,jdbcType=INTEGER},
+      </if>
+      <if test="username != null">
+        #{username,jdbcType=VARCHAR},
+      </if>
+      <if test="uid != null">
+        #{uid,jdbcType=VARCHAR},
+      </if>
+      <if test="shop != null">
+        #{shop,jdbcType=VARCHAR},
+      </if>
+      <if test="ndate != null">
+        #{ndate,jdbcType=VARCHAR},
+      </if>
+      <if test="total != null">
+        #{total,jdbcType=VARCHAR},
+      </if>
+      <if test="ydate != null">
+        #{ydate,jdbcType=VARCHAR},
+      </if>
+      <if test="typecn != null">
+        #{typecn,jdbcType=VARCHAR},
+      </if>
+      <if test="typeid != null">
+        #{typeid,jdbcType=INTEGER},
+      </if>
+      <if test="tel != null">
+        #{tel,jdbcType=VARCHAR},
+      </if>
+      <if test="note != null">
+        #{note,jdbcType=VARCHAR},
+      </if>
+      <if test="statecn != null">
+        #{statecn,jdbcType=VARCHAR},
+      </if>
+      <if test="pnote != null">
+        #{pnote,jdbcType=VARCHAR},
+      </if>
+      <if test="pf != null">
+        #{pf,jdbcType=VARCHAR},
+      </if>
+      <if test="lxr != null">
+        #{lxr,jdbcType=VARCHAR},
+      </if>
+      <if test="roomid != null">
+        #{roomid,jdbcType=INTEGER},
+      </if>
+      <if test="site != null">
+        #{site,jdbcType=VARCHAR},
+      </if>
+      <if test="siteid != null">
+        #{siteid,jdbcType=INTEGER},
+      </if>
+      <if test="shiduan != null">
+        #{shiduan,jdbcType=VARCHAR},
+      </if>
+      <if test="room != null">
+        #{room,jdbcType=VARCHAR},
+      </if>
+      <if test="shiduanid != null">
+        #{shiduanid,jdbcType=INTEGER},
+      </if>
+      <if test="stime != null">
+        #{stime,jdbcType=VARCHAR},
+      </if>
+      <if test="etime != null">
+        #{etime,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.ideabobo.model.Yuyue">
+    update wct_yuyue
+    <set>
+      <if test="sid != null">
+        sid = #{sid,jdbcType=INTEGER},
+      </if>
+      <if test="username != null">
+        username = #{username,jdbcType=VARCHAR},
+      </if>
+      <if test="uid != null">
+        uid = #{uid,jdbcType=VARCHAR},
+      </if>
+      <if test="shop != null">
+        shop = #{shop,jdbcType=VARCHAR},
+      </if>
+      <if test="ndate != null">
+        ndate = #{ndate,jdbcType=VARCHAR},
+      </if>
+      <if test="total != null">
+        total = #{total,jdbcType=VARCHAR},
+      </if>
+      <if test="ydate != null">
+        ydate = #{ydate,jdbcType=VARCHAR},
+      </if>
+      <if test="typecn != null">
+        typecn = #{typecn,jdbcType=VARCHAR},
+      </if>
+      <if test="typeid != null">
+        typeid = #{typeid,jdbcType=INTEGER},
+      </if>
+      <if test="tel != null">
+        tel = #{tel,jdbcType=VARCHAR},
+      </if>
+      <if test="note != null">
+        note = #{note,jdbcType=VARCHAR},
+      </if>
+      <if test="statecn != null">
+        statecn = #{statecn,jdbcType=VARCHAR},
+      </if>
+      <if test="pnote != null">
+        pnote = #{pnote,jdbcType=VARCHAR},
+      </if>
+      <if test="pf != null">
+        pf = #{pf,jdbcType=VARCHAR},
+      </if>
+      <if test="lxr != null">
+        lxr = #{lxr,jdbcType=VARCHAR},
+      </if>
+      <if test="roomid != null">
+        roomid = #{roomid,jdbcType=INTEGER},
+      </if>
+      <if test="site != null">
+        site = #{site,jdbcType=VARCHAR},
+      </if>
+      <if test="siteid != null">
+        siteid = #{siteid,jdbcType=INTEGER},
+      </if>
+      <if test="shiduan != null">
+        shiduan = #{shiduan,jdbcType=VARCHAR},
+      </if>
+      <if test="room != null">
+        room = #{room,jdbcType=VARCHAR},
+      </if>
+      <if test="shiduanid != null">
+        shiduanid = #{shiduanid,jdbcType=INTEGER},
+      </if>
+      <if test="stime != null">
+        stime = #{stime,jdbcType=VARCHAR},
+      </if>
+      <if test="etime != null">
+        etime = #{etime,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.ideabobo.model.Yuyue">
+    update wct_yuyue
+    set sid = #{sid,jdbcType=INTEGER},
+      username = #{username,jdbcType=VARCHAR},
+      uid = #{uid,jdbcType=VARCHAR},
+      shop = #{shop,jdbcType=VARCHAR},
+      ndate = #{ndate,jdbcType=VARCHAR},
+      total = #{total,jdbcType=VARCHAR},
+      ydate = #{ydate,jdbcType=VARCHAR},
+      typecn = #{typecn,jdbcType=VARCHAR},
+      typeid = #{typeid,jdbcType=INTEGER},
+      tel = #{tel,jdbcType=VARCHAR},
+      note = #{note,jdbcType=VARCHAR},
+      statecn = #{statecn,jdbcType=VARCHAR},
+      pnote = #{pnote,jdbcType=VARCHAR},
+      pf = #{pf,jdbcType=VARCHAR},
+      lxr = #{lxr,jdbcType=VARCHAR},
+      roomid = #{roomid,jdbcType=INTEGER},
+      site = #{site,jdbcType=VARCHAR},
+      siteid = #{siteid,jdbcType=INTEGER},
+      shiduan = #{shiduan,jdbcType=VARCHAR},
+      room = #{room,jdbcType=VARCHAR},
+      shiduanid = #{shiduanid,jdbcType=INTEGER},
+      stime = #{stime,jdbcType=VARCHAR},
+      etime = #{etime,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

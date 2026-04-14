@@ -1,0 +1,66 @@
+{
+  "homeInfo": {
+    "title": "首页",
+    "href": "user.html"
+  },
+  "logoInfo": {
+    "title": "共享自习室",
+    "image": "./__PUBLIC__/images/login/logo.png",
+    "href": ""
+  },
+  "menuInfo": [
+    {
+      "title": "系统管理",
+      "icon": "fa fa-address-book",
+      "href": "",
+      "target": "_self",
+      "child": [
+
+        {
+          "title": "账户管理",
+          "href": "user.html",
+          "icon": "fa fa-window-maximize",
+          "target": "_self"
+        },
+
+        {
+          "title": "自习室管理",
+          "href": "roomsite.html",
+          "icon": "fa fa-gears",
+          "target": "_self"
+        },
+        {
+          "title": "可申请时间段管理",
+          "href": "shiduan.html",
+          "icon": "fa fa-gears",
+          "target": "_self"
+        },
+        {
+          "title": "预约记录",
+          "href": "yuyue.html",
+          "icon": "fa fa-gears",
+          "target": "_self"
+        },
+        {
+          "title": "图书馆管理",
+          "href": "shopmap.html",
+          "icon": "fa fa-gears",
+          "target": "_self"
+        },
+
+        {
+          "title": "公告通知",
+          "href": "notice.html",
+          "icon": "fa fa-file-text",
+          "target": "_self"
+        },
+        {
+          "title": "交流论坛",
+          "href": "postsreplay.html",
+          "icon": "fa fa-file-text",
+          "target": "_self"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+<view><u-navbar vue-id="1e68eadc-1" title="扫码" leftIconSize="0" border="{{true}}" placeholder="{{true}}" autoBack="{{false}}" data-event-opts="{{[['^leftClick',[['goBack']]]]}}" bind:leftClick="__e" bind:__l="__l"></u-navbar></view>

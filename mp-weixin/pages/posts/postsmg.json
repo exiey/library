@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "u-navbar": "/node-modules/uview-ui/components/u-navbar/u-navbar",
+    "jin-edit": "/components/jin-edit/jin-edit",
+    "file-upload": "/components/file-upload",
+    "idea-upload": "/components/idea-upload/idea-upload"
+  }
+}

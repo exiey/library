@@ -1,0 +1,40 @@
+{
+  "homeInfo": {
+    "title": "首页",
+    "href": "yuyueshop.html"
+  },
+  "logoInfo": {
+    "title": "共享自习室",
+    "image": "./__PUBLIC__/images/login/logo.png",
+    "href": ""
+  },
+  "menuInfo": [
+    {
+      "title": "系统管理",
+      "icon": "fa fa-address-book",
+      "href": "",
+      "target": "_self",
+      "child": [
+
+        {
+          "title": "自习室管理",
+          "href": "roomsiteshop.html",
+          "icon": "fa fa-gears",
+          "target": "_self"
+        },
+        {
+          "title": "可申请时间段管理",
+          "href": "shiduan.html",
+          "icon": "fa fa-gears",
+          "target": "_self"
+        },
+        {
+          "title": "预约记录",
+          "href": "yuyueshop.html",
+          "icon": "fa fa-gears",
+          "target": "_self"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.page-container.data-v-0e08e674 {
+  min-height: 100vh;
+  background-color: #f6f8fb;
+}
+.content-scroll.data-v-0e08e674 {
+  height: calc(100vh - 44px);
+}
+/* 筛选卡片 */
+.filter-card.data-v-0e08e674 {
+  margin: 24rpx;
+  padding: 30rpx;
+  background-color: #ffffff;
+  border-radius: 30rpx;
+  box-shadow: 0 4rpx 20rpx rgba(0, 0, 0, 0.03);
+}
+.card-header.data-v-0e08e674 {
+  margin-bottom: 30rpx;
+  border-bottom: 1rpx solid #f0f0f0;
+  padding-bottom: 20rpx;
+}
+.card-title.data-v-0e08e674 {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+  display: block;
+}
+.card-subtitle.data-v-0e08e674 {
+  font-size: 22rpx;
+  color: #999;
+}
+.custom-input-box.data-v-0e08e674 {
+  border-bottom: 1rpx solid #f8f8f8;
+  padding: 10rpx 0;
+}
+.no-border.data-v-0e08e674 {
+  border-bottom: none;
+}
+.action-box.data-v-0e08e674 {
+  margin-top: 30rpx;
+}
+/* 选座区域 */
+.seat-section.data-v-0e08e674 {
+  margin: 24rpx;
+  padding: 30rpx;
+  background-color: #ffffff;
+  border-radius: 30rpx;
+  box-shadow: 0 4rpx 20rpx rgba(0, 0, 0, 0.03);
+}
+.seat-header.data-v-0e08e674 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40rpx;
+}
+.title-group.data-v-0e08e674 {
+  display: flex;
+  align-items: center;
+}
+.title-line.data-v-0e08e674 {
+  width: 8rpx;
+  height: 32rpx;
+  background: #4facfe;
+  border-radius: 4rpx;
+  margin-right: 16rpx;
+}
+.section-title.data-v-0e08e674 {
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.legend-group.data-v-0e08e674 {
+  display: flex;
+  gap: 20rpx;
+}
+.legend-item.data-v-0e08e674 {
+  display: flex;
+  align-items: center;
+  font-size: 22rpx;
+  color: #666;
+}
+.l-box.data-v-0e08e674 {
+  width: 24rpx;
+  height: 24rpx;
+  border-radius: 6rpx;
+  margin-right: 8rpx;
+}
+.l-box.available.data-v-0e08e674 {
+  background-color: #ecfdf5;
+  border: 1rpx solid #10b981;
+}
+.l-box.occupied.data-v-0e08e674 {
+  background-color: #fef2f2;
+  border: 1rpx solid #ef4444;
+}
+.l-box.maintenance.data-v-0e08e674 {
+  background-color: #f1f5f9;
+  border: 1rpx solid #94a3b8;
+}
+/* 座位网格实现 */
+.seat-grid-container.data-v-0e08e674 {
+  padding: 20rpx 0;
+}
+.seat-grid.data-v-0e08e674 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* 4列响应式 */
+  gap: 24rpx;
+}
+.seat-unit.data-v-0e08e674 {
+  height: 120rpx;
+  border-radius: 20rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  position: relative;
+}
+.seat-unit.data-v-0e08e674:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+.seat-num.data-v-0e08e674 {
+  font-size: 24rpx;
+  font-weight: bold;
+  margin-bottom: 4rpx;
+  z-index: 2;
+}
+.seat-icon.data-v-0e08e674 {
+  font-size: 32rpx;
+  opacity: 0.5;
+}
+/* 座位状态类 */
+.zuowei.data-v-0e08e674 {
+  background-color: #ecfdf5;
+  border: 2rpx solid #10b981;
+  color: #059669;
+}
+.zuoweif.data-v-0e08e674 {
+  background-color: #fef2f2;
+  border: 2rpx solid #ef4444;
+  color: #dc2626;
+}
+.zuoweim.data-v-0e08e674 {
+  background-color: #f1f5f9;
+  border: 2rpx solid #94a3b8;
+  color: #64748b;
+}
+.seat-footer.data-v-0e08e674 {
+  margin-top: 40rpx;
+  text-align: center;
+  font-size: 22rpx;
+  color: #ff9d00;
+  background-color: #fff9eb;
+  padding: 16rpx;
+  border-radius: 12rpx;
+}
+/* 空状态 */
+.empty-state.data-v-0e08e674 {
+  padding: 100rpx 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.empty-icon.data-v-0e08e674 {
+  font-size: 80rpx;
+  margin-bottom: 20rpx;
+}
+.empty-text.data-v-0e08e674 {
+  color: #999;
+  font-size: 26rpx;
+}
+.safe-bottom.data-v-0e08e674 {
+  height: 60rpx;
+}
+/* 跨端 Web 适配 */
+@media screen and (min-width: 750px) {
+.seat-grid.data-v-0e08e674 {
+    grid-template-columns: repeat(6, 1fr);
+    /* 宽屏显示6列 */
+}
+.content-scroll.data-v-0e08e674 {
+    max-width: 600px;
+    margin: 0 auto;
+}
+}
+

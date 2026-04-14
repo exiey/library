@@ -1,0 +1,184 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+/* 基础容器 */
+.page-container.data-v-2aa79262 {
+  min-height: 100vh;
+  background-color: #f6f8fb;
+  display: flex;
+  flex-direction: column;
+}
+.tab-wrapper.data-v-2aa79262 {
+  background-color: #ffffff;
+  padding-bottom: 10rpx;
+  box-shadow: 0 4rpx 12rpx rgba(0, 0, 0, 0.02);
+  z-index: 10;
+}
+.content-scroll.data-v-2aa79262 {
+  flex: 1;
+  height: 0;
+}
+/* 预约列表 */
+.reservation-list.data-v-2aa79262 {
+  padding: 24rpx;
+}
+.order-card.data-v-2aa79262 {
+  background-color: #ffffff;
+  border-radius: 24rpx;
+  padding: 30rpx;
+  margin-bottom: 24rpx;
+  box-shadow: 0 4rpx 16rpx rgba(0, 0, 0, 0.02);
+  border: 1rpx solid #f0f3f6;
+  transition: all 0.2s;
+}
+.card-hover.data-v-2aa79262 {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+  background-color: #fafbfc;
+}
+/* 卡片头部 */
+.card-header.data-v-2aa79262 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 2rpx dashed #f0f0f0;
+}
+.room-info.data-v-2aa79262 {
+  display: flex;
+  align-items: center;
+}
+.room-icon.data-v-2aa79262 {
+  font-size: 32rpx;
+  margin-right: 12rpx;
+}
+.room-name.data-v-2aa79262 {
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #333;
+}
+/* 状态标签色值 */
+.status-badge.data-v-2aa79262 {
+  font-size: 22rpx;
+  padding: 6rpx 16rpx;
+  border-radius: 8rpx;
+  font-weight: 500;
+}
+.state-blue.data-v-2aa79262 {
+  background: rgba(79, 172, 254, 0.1);
+  color: #4facfe;
+}
+.state-green.data-v-2aa79262 {
+  background: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+}
+.state-orange.data-v-2aa79262 {
+  background: rgba(245, 158, 11, 0.1);
+  color: #f59e0b;
+}
+.state-red.data-v-2aa79262 {
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+}
+.state-gray.data-v-2aa79262 {
+  background: #f1f5f9;
+  color: #94a3b8;
+}
+.state-purple.data-v-2aa79262 {
+  background: rgba(139, 92, 246, 0.1);
+  color: #8b5cf6;
+}
+.state-default.data-v-2aa79262 {
+  background: #eee;
+  color: #666;
+}
+/* 卡片主体 */
+.card-body.data-v-2aa79262 {
+  margin-bottom: 24rpx;
+}
+.info-row.data-v-2aa79262 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16rpx;
+}
+.info-row.data-v-2aa79262:last-child {
+  margin-bottom: 0;
+}
+.row-label.data-v-2aa79262 {
+  font-size: 26rpx;
+  color: #999;
+}
+.row-value.data-v-2aa79262 {
+  font-size: 26rpx;
+  color: #444;
+  font-weight: 500;
+}
+/* 卡片底部 */
+.card-footer.data-v-2aa79262 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20rpx;
+  border-top: 1rpx solid #f8f8f8;
+}
+.detail-tip.data-v-2aa79262 {
+  font-size: 24rpx;
+  color: #bbb;
+}
+.arrow.data-v-2aa79262 {
+  font-size: 24rpx;
+  color: #ccc;
+}
+/* 空状态 */
+.empty-state.data-v-2aa79262 {
+  padding: 120rpx 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.empty-icon.data-v-2aa79262 {
+  font-size: 100rpx;
+  margin-bottom: 30rpx;
+  opacity: 0.5;
+}
+.empty-text.data-v-2aa79262 {
+  font-size: 28rpx;
+  color: #999;
+}
+.safe-bottom.data-v-2aa79262 {
+  height: 60rpx;
+}
+/* Web端适配 */
+@media screen and (min-width: 750px) {
+.page-container.data-v-2aa79262 {
+    max-width: 500px;
+    margin: 0 auto;
+    border-left: 1rpx solid #eee;
+    border-right: 1rpx solid #eee;
+}
+}
+
